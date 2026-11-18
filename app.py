@@ -92,7 +92,7 @@ def processar_planilha(file_bytes, marca):
             qtde_cessao_val = to_float(row[idx_qtde_cessao - 1])
             prog_varejo_val = to_float(row[idx_prog_varejo - 1])
             
-            if (falta_val > 0 or qtde_cessao_val > 0) and (prog_varejo_val > 0):
+            if (falta_val > 0 or qtde_cessao_val > 0):
                 linhas_validas.append(row)
                 val_colecao = str(row[idx_colecao - 1]).strip() if row[idx_colecao - 1] is not None else ""
                 if val_colecao:
